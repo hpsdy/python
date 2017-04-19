@@ -1,0 +1,10 @@
+INFO:root:xxx
+INFO:root:server start at 127.0.0.1:9000
+INFO:root:server start at 127.0.0.1:9000
+INFO:root:server start at 127.0.0.1:9000
+INFO:root:server start at 127.0.0.1:9000
+INFO:aiohttp.access:127.0.0.1 - - [19/Apr/2017:03:48:57 +0000] "GET / HTTP/1.1" 200 157 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36"
+INFO:root:server start at 127.0.0.1:9000
+INFO:root:server start at 127.0.0.1:9000
+INFO:root:server start at 127.0.0.1:9000
+INFO:aiohttp.access:127.0.0.1 - - [19/Apr/2017:03:54:24 +0000] "GET / HTTP/1.1" 200 157 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36"

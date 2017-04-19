@@ -1,0 +1,171 @@
+INFO:root:server start at 127.0.0.1:9000
+INFO:root:server start at 127.0.0.1:9000
+ERROR:aiohttp.server:Error handling request
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\aiohttp\web_protocol.py", line 417, in start
+    resp = yield from self._request_handler(request)
+  File "D:\python\lib\site-packages\aiohttp\web.py", line 289, in _handle
+    resp = yield from handler(request)
+  File "D:\python\lib\site-packages\aiohttp\web_urldispatcher.py", line 109, in handler_wrapper
+    result = old_handler(*args, **kwargs)
+  File "app.py", line 7, in index
+    return web.Response(body=b'<b>2</b>',header=b'Content-Type: text/html')
+TypeError: __init__() got an unexpected keyword argument 'header'
+INFO:aiohttp.access:127.0.0.1 - - [19/Apr/2017:04:04:43 +0000] "GET / HTTP/1.1" 500 330 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36"
+INFO:aiohttp.access:127.0.0.1 - - [19/Apr/2017:04:04:43 +0000] "GET /favicon.ico HTTP/1.1" 404 172 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36"
+ERROR:aiohttp.server:Error handling request
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\aiohttp\web_protocol.py", line 417, in start
+    resp = yield from self._request_handler(request)
+  File "D:\python\lib\site-packages\aiohttp\web.py", line 289, in _handle
+    resp = yield from handler(request)
+  File "D:\python\lib\site-packages\aiohttp\web_urldispatcher.py", line 109, in handler_wrapper
+    result = old_handler(*args, **kwargs)
+  File "app.py", line 7, in index
+    return web.Response(body=b'<b>2</b>',header=b'Content-Type: text/html')
+TypeError: __init__() got an unexpected keyword argument 'header'
+INFO:aiohttp.access:127.0.0.1 - - [19/Apr/2017:04:04:51 +0000] "GET / HTTP/1.1" 500 330 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36"
+ERROR:aiohttp.server:Error handling request
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\aiohttp\web_protocol.py", line 417, in start
+    resp = yield from self._request_handler(request)
+  File "D:\python\lib\site-packages\aiohttp\web.py", line 289, in _handle
+    resp = yield from handler(request)
+  File "D:\python\lib\site-packages\aiohttp\web_urldispatcher.py", line 109, in handler_wrapper
+    result = old_handler(*args, **kwargs)
+  File "app.py", line 7, in index
+    return web.Response(body=b'<b>2</b>',header=b'Content-Type: text/html')
+TypeError: __init__() got an unexpected keyword argument 'header'
+INFO:aiohttp.access:127.0.0.1 - - [19/Apr/2017:04:05:10 +0000] "GET / HTTP/1.1" 500 330 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36"
+ERROR:aiohttp.server:Error handling request
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\aiohttp\web_protocol.py", line 417, in start
+    resp = yield from self._request_handler(request)
+  File "D:\python\lib\site-packages\aiohttp\web.py", line 289, in _handle
+    resp = yield from handler(request)
+  File "D:\python\lib\site-packages\aiohttp\web_urldispatcher.py", line 109, in handler_wrapper
+    result = old_handler(*args, **kwargs)
+  File "app.py", line 7, in index
+    return web.Response(body=b'<b>2</b>',header=b'Content-Type: text/html')
+TypeError: __init__() got an unexpected keyword argument 'header'
+INFO:aiohttp.access:127.0.0.1 - - [19/Apr/2017:04:05:11 +0000] "GET / HTTP/1.1" 500 330 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36"
+ERROR:aiohttp.server:Error handling request
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\aiohttp\web_protocol.py", line 417, in start
+    resp = yield from self._request_handler(request)
+  File "D:\python\lib\site-packages\aiohttp\web.py", line 289, in _handle
+    resp = yield from handler(request)
+  File "D:\python\lib\site-packages\aiohttp\web_urldispatcher.py", line 109, in handler_wrapper
+    result = old_handler(*args, **kwargs)
+  File "app.py", line 7, in index
+    return web.Response(body=b'<b>2</b>',header=b'Content-Type: text/html')
+TypeError: __init__() got an unexpected keyword argument 'header'
+INFO:aiohttp.access:127.0.0.1 - - [19/Apr/2017:04:05:11 +0000] "GET / HTTP/1.1" 500 330 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36"
+ERROR:aiohttp.server:Error handling request
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\aiohttp\web_protocol.py", line 417, in start
+    resp = yield from self._request_handler(request)
+  File "D:\python\lib\site-packages\aiohttp\web.py", line 289, in _handle
+    resp = yield from handler(request)
+  File "D:\python\lib\site-packages\aiohttp\web_urldispatcher.py", line 109, in handler_wrapper
+    result = old_handler(*args, **kwargs)
+  File "app.py", line 7, in index
+    return web.Response(body=b'<b>2</b>',header=b'Content-Type: text/html')
+TypeError: __init__() got an unexpected keyword argument 'header'
+INFO:aiohttp.access:127.0.0.1 - - [19/Apr/2017:05:28:08 +0000] "GET / HTTP/1.1" 500 330 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36"
+ERROR:aiohttp.server:Error handling request
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\aiohttp\web_protocol.py", line 417, in start
+    resp = yield from self._request_handler(request)
+  File "D:\python\lib\site-packages\aiohttp\web.py", line 289, in _handle
+    resp = yield from handler(request)
+  File "D:\python\lib\site-packages\aiohttp\web_urldispatcher.py", line 109, in handler_wrapper
+    result = old_handler(*args, **kwargs)
+  File "app.py", line 7, in index
+    return web.Response(body=b'<b>2</b>',header=b'Content-Type: text/html')
+TypeError: __init__() got an unexpected keyword argument 'header'
+INFO:aiohttp.access:127.0.0.1 - - [19/Apr/2017:05:28:08 +0000] "GET / HTTP/1.1" 500 330 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36"
+ERROR:aiohttp.server:Error handling request
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\aiohttp\web_protocol.py", line 417, in start
+    resp = yield from self._request_handler(request)
+  File "D:\python\lib\site-packages\aiohttp\web.py", line 289, in _handle
+    resp = yield from handler(request)
+  File "D:\python\lib\site-packages\aiohttp\web_urldispatcher.py", line 109, in handler_wrapper
+    result = old_handler(*args, **kwargs)
+  File "app.py", line 7, in index
+    return web.Response(body=b'<b>2</b>',header=b'Content-Type: text/html')
+TypeError: __init__() got an unexpected keyword argument 'header'
+INFO:aiohttp.access:127.0.0.1 - - [19/Apr/2017:05:28:29 +0000] "GET / HTTP/1.1" 500 330 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36"
+ERROR:aiohttp.server:Error handling request
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\aiohttp\web_protocol.py", line 417, in start
+    resp = yield from self._request_handler(request)
+  File "D:\python\lib\site-packages\aiohttp\web.py", line 289, in _handle
+    resp = yield from handler(request)
+  File "D:\python\lib\site-packages\aiohttp\web_urldispatcher.py", line 109, in handler_wrapper
+    result = old_handler(*args, **kwargs)
+  File "app.py", line 7, in index
+    return web.Response(body=b'<b>2</b>',header=b'Content-Type: text/html')
+TypeError: __init__() got an unexpected keyword argument 'header'
+INFO:aiohttp.access:127.0.0.1 - - [19/Apr/2017:05:28:30 +0000] "GET / HTTP/1.1" 500 330 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36"
+ERROR:aiohttp.server:Error handling request
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\aiohttp\web_protocol.py", line 417, in start
+    resp = yield from self._request_handler(request)
+  File "D:\python\lib\site-packages\aiohttp\web.py", line 289, in _handle
+    resp = yield from handler(request)
+  File "D:\python\lib\site-packages\aiohttp\web_urldispatcher.py", line 109, in handler_wrapper
+    result = old_handler(*args, **kwargs)
+  File "app.py", line 7, in index
+    return web.Response(body=b'<b>2</b>',header=b'Content-Type: text/html')
+TypeError: __init__() got an unexpected keyword argument 'header'
+INFO:aiohttp.access:127.0.0.1 - - [19/Apr/2017:05:28:30 +0000] "GET / HTTP/1.1" 500 330 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36"
+ERROR:aiohttp.server:Error handling request
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\aiohttp\web_protocol.py", line 417, in start
+    resp = yield from self._request_handler(request)
+  File "D:\python\lib\site-packages\aiohttp\web.py", line 289, in _handle
+    resp = yield from handler(request)
+  File "D:\python\lib\site-packages\aiohttp\web_urldispatcher.py", line 109, in handler_wrapper
+    result = old_handler(*args, **kwargs)
+  File "app.py", line 7, in index
+    return web.Response(body=b'<b>2</b>',header=b'Content-Type: text/html')
+TypeError: __init__() got an unexpected keyword argument 'header'
+INFO:aiohttp.access:127.0.0.1 - - [19/Apr/2017:05:29:18 +0000] "GET / HTTP/1.1" 500 330 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36"
+ERROR:aiohttp.server:Error handling request
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\aiohttp\web_protocol.py", line 417, in start
+    resp = yield from self._request_handler(request)
+  File "D:\python\lib\site-packages\aiohttp\web.py", line 289, in _handle
+    resp = yield from handler(request)
+  File "D:\python\lib\site-packages\aiohttp\web_urldispatcher.py", line 109, in handler_wrapper
+    result = old_handler(*args, **kwargs)
+  File "app.py", line 7, in index
+    return web.Response(body=b'<b>2</b>',header=b'Content-Type: text/html')
+TypeError: __init__() got an unexpected keyword argument 'header'
+INFO:aiohttp.access:127.0.0.1 - - [19/Apr/2017:05:29:18 +0000] "GET / HTTP/1.1" 500 330 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36"
+ERROR:aiohttp.server:Error handling request
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\aiohttp\web_protocol.py", line 417, in start
+    resp = yield from self._request_handler(request)
+  File "D:\python\lib\site-packages\aiohttp\web.py", line 289, in _handle
+    resp = yield from handler(request)
+  File "D:\python\lib\site-packages\aiohttp\web_urldispatcher.py", line 109, in handler_wrapper
+    result = old_handler(*args, **kwargs)
+  File "app.py", line 7, in index
+    return web.Response(body=b'<b>2</b>',header=b'Content-Type: text/html')
+TypeError: __init__() got an unexpected keyword argument 'header'
+INFO:aiohttp.access:127.0.0.1 - - [19/Apr/2017:05:29:18 +0000] "GET / HTTP/1.1" 500 330 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36"
+ERROR:aiohttp.server:Error handling request
+Traceback (most recent call last):
+  File "D:\python\lib\site-packages\aiohttp\web_protocol.py", line 417, in start
+    resp = yield from self._request_handler(request)
+  File "D:\python\lib\site-packages\aiohttp\web.py", line 289, in _handle
+    resp = yield from handler(request)
+  File "D:\python\lib\site-packages\aiohttp\web_urldispatcher.py", line 109, in handler_wrapper
+    result = old_handler(*args, **kwargs)
+  File "app.py", line 7, in index
+    return web.Response(body=b'<b>2</b>',header=b'Content-Type: text/html')
+TypeError: __init__() got an unexpected keyword argument 'header'
+INFO:aiohttp.access:127.0.0.1 - - [19/Apr/2017:05:29:40 +0000] "GET / HTTP/1.1" 500 330 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36"
