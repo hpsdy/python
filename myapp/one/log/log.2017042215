@@ -1,0 +1,9 @@
+INFO:root:server start at 127.0.0.1:9000
+INFO:aiohttp.access:127.0.0.1 - - [22/Apr/2017:07:27:43 +0000] "GET / HTTP/1.1" 200 142 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.87 Safari/537.36"
+INFO:aiohttp.access:127.0.0.1 - - [22/Apr/2017:07:27:43 +0000] "GET /favicon.ico HTTP/1.1" 404 172 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.87 Safari/537.36"
+INFO:root:server start at 127.0.0.1:9000
+INFO:aiohttp.access:127.0.0.1 - - [22/Apr/2017:07:27:50 +0000] "GET / HTTP/1.1" 200 142 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.87 Safari/537.36"
+INFO:aiohttp.access:127.0.0.1 - - [22/Apr/2017:07:27:51 +0000] "GET / HTTP/1.1" 200 142 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.87 Safari/537.36"
+INFO:root:server start at 127.0.0.1:9000
+INFO:aiohttp.access:127.0.0.1 - - [22/Apr/2017:07:34:02 +0000] "GET / HTTP/1.1" 200 142 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.87 Safari/537.36"
+INFO:aiohttp.access:127.0.0.1 - - [22/Apr/2017:07:34:02 +0000] "GET / HTTP/1.1" 200 142 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.87 Safari/537.36"
