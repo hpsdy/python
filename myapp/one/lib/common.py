@@ -1,6 +1,6 @@
 def create_args_string(num):
 	'''
-	Éú³ÉÖ¸¶¨³¤¶ÈµÄlist£¬²¢ÓÃÕ¼Î»·û£¿Ìî³ä
+	ç”ŸæˆæŒ‡å®šé•¿åº¦çš„listï¼Œå¹¶ç”¨å ä½ç¬¦ï¼Ÿå¡«å……
 	'''
 	arr = []
 	for n in range(num):
