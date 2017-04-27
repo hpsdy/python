@@ -3,6 +3,7 @@ import logging
 from aiohttp import web
 import asyncio,json,time,os
 from datetime import *
+import functools
 def index(request):
 	return web.Response(body=b'<b>2</b>',content_type='text/html')
 	
@@ -25,3 +26,25 @@ loop = asyncio.get_event_loop()
 loop.create_task(run(loop))
 show_task(4)
 loop.run_forever()
+
+
+def get(path):
+	logging.info('Define decorator @get('/%s')' % path)
+	def decorater(func):
+	@functools.wraps(func)
+		def wrapper(*args,**kw):
+			return func(*args,**kw)
+		wrapper.__method__ = 'get'
+		wrapper.__path__ = path
+		return wrapper
+	return decorater
+def post(path):
+	logging.info('Define decorator @post('/%s')' % path)
+	def decorater(func):
+	@functools.wraps(func)
+		def wrapper(*args,**kw):
+			return func(*args,**kw)
+		wrapper.__method__ = 'post'
+		wrapper.__path__ = path
+		return wrapper
+	return decorater

@@ -1,6 +1,6 @@
 def create_args_string(num):
 	'''
-	生成指定长度的list，并用占位符？填充
+	鐢熸垚鎸囧畾闀垮害鐨刲ist锛屽苟鐢ㄥ崰浣嶇锛熷～鍏?
 	'''
 	arr = []
 	for n in range(num):

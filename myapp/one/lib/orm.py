@@ -47,6 +47,7 @@ async def execute(sql,argv):
 
 class ModelMetaClass(type):
 	def __new__(obj,classname,bases,attrs):
+		print('xxx:',obj,'xxx',type(obj),'xxx',classname,'xxx',bases,'xxx',attrs)
 		if classname == 'Model':
 			return type.__new__(obj,classname,bases,attrs)
 		tableName = attrs.get('__table__',None) or name
