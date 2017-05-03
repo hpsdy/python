@@ -1,5 +1,10 @@
 import inspect
+import os
+path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'static')
 
+print(__file__,os.path.abspath(__file__),os.path.dirname(os.path.abspath(__file__)),path)
+
+'''
 def add_routes(module_name):
 	n = module_name.rfind('.')
 	print(n)
@@ -24,7 +29,6 @@ add_routes('handlers')
 
 
 
-'''
 
 
 
