@@ -71,4 +71,53 @@ def has_request_args(fn):
 		if found and (param.kind!=inspect.Parameter.VAR_KEYWORD and param.kind!=inspect.Parameter.KEYWORD_ONLY and param.kind!=inspect.Parameter.VAR_KEYWORD):
 			raise KeyError('request is error')
 	return found
+	
+	
+	
+	
+	
+	
+	
+class RequestHandler(object):
+	def __init__(self,app,fn):
+		self._app = app
+		self._func = fn
+		self._has_request_args = has_request_args(fn)
+        self._has_var_kw_args = has_var_kw_args(fn)
+        self._has_named_kw_args = has_named_kw_args(fn)
+        self._named_kw_args = get_named_kw_args(fn)
+        self._required_kw_args = get_required_kw_args(fn)
+	def __call__(self,request):
+		kw = None
+		if self._has_var_kw_args or self._has_named_kw_args or self._has_request_args:
+			if request.method == 'POST':
+				if not request.content_type:
+					return web.HTTPBadRequest('miss http content_type')
+				ct = request.content_type.lower()
+				if ct.startswith('application/json'):
+					params = await request.json()
+					if not isinstance(params,dict):
+						return web.HTTPBadRequest('bad json object')
+					kw = params
+				elif ct.startswith('application/x-www-form-urlencoded') or ct.startswith('multipart/form-data'):
+					params = await request.post()
+					kw = dict(**params)
+				else:
+					return web.HTTPBadRequest('Unsupported content_type:%s' % request.content_type)
+					
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 			
