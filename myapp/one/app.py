@@ -39,12 +39,12 @@ def get(path):
 		return wrapper
 	return decorater
 def post(path):
-	logging.info('Define decorator @post('/%s')' % path)
-	def decorater(func):
-	@functools.wraps(func)
+	def decorator(func):
+		@functools.wraps(func)
 		def wrapper(*args,**kw):
 			return func(*args,**kw)
-		wrapper.__method__ = 'post'
-		wrapper.__path__ = path
+		wrapper.__method__ = 'POST'
+		wrapper.__route__ = path
 		return wrapper
-	return decorater
+	return decorator
+
