@@ -19,7 +19,7 @@ def post(path):
 	return decorator
 def get_required_kw_args(fn):
 	'''
-	获取没有默认值的命名关键字参数
+	获取没有默认值的命名关键字参数即必传参数
 	'''
 	args = []
 	params = inspect.signature(fn).parameters
@@ -29,7 +29,7 @@ def get_required_kw_args(fn):
 	return tuple(args)
 def get_named_kw_args(fn):
 	'''
-	获取所有的命名关键字参数
+	获取所有的命名关键字参数，即包括默认值的必传参数（有默认值表示必须有值，没有的话用默认值）
 	'''
 	args = []
 	params = inspect.signature(fn).parameters
@@ -104,12 +104,42 @@ class RequestHandler(object):
 					kw = dict(**params)
 				else:
 					return web.HTTPBadRequest('Unsupported content_type:%s' % request.content_type)
-					
+			if request.method == 'GET':
+				qs = request.query_string
+				if qs:
+					kw = dict()
+					for x,y in parse.parse_qs(qs,True).items():
+						kw[x] = y[0]
+		if kw is None:
+			kw = dict(**request.match_info)
+		else:
+			if not self._has_var_kw_args and self._named_kw_args:
+				copy = dict()
+				for x in self._named_kw_args:
+					if x in kw:
+						copy[x] = kw[x]
+				kw = copy
+			if x,y in request.match_info.items():
+				if x in kw:
+					logging.warning('key had existed:%s' % x)
+				kw[x] = y
+		if self._has_request_args:
+			kw['request'] = request
+		if self._required_kw_args:
+			for x self._required_kw_args:
+				if not x in kw:
+					logging.warning('must key is not existed:%s' % x)
+					return web.HTTPBadRequest('must key is not existed:%s' % x)
+		try:
+			ret = await self._func(**kw)
+		except APIError as e:
+			return dict(error=e.error, data=e.data, message=e.message)
 	
 	
-	
-	
-	
+def add_static(app):
+	path = os.path.join(os.path.dirname(os.path.abspath(__file__)),'static')
+	app.router.add_static('/static/',path)
+def add_routes
 	
 	
 	
