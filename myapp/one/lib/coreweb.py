@@ -1,4 +1,10 @@
-import functools,inspect
+from log import *
+import logging
+import asyncio, os, inspect,functools
+from urllib import parse
+from aiohttp import web
+from apis import APIError
+
 def get(path):
 	def decorator(func):
 		@functools.wraps(func)
@@ -104,12 +110,42 @@ class RequestHandler(object):
 					kw = dict(**params)
 				else:
 					return web.HTTPBadRequest('Unsupported content_type:%s' % request.content_type)
-					
-	
-	
-	
-	
-	
+			if request.method == 'GET':
+				qs = request.query_string
+				if qs:
+					kw = dict()
+					for x,y in parse.parse_qs(qs,True).items():
+						kw[x] = y[0]
+		if not kw:
+			kw = dict(**request.match_info)
+		else:
+			if not self._has_var_kw_args and self._named_kw_args:
+				copy = dict()
+				for name in self._named_kw_args:
+					if name in kw:
+						copy[name] = kw[name]
+				kw = copy
+			for name,val in request.match_info.items():
+				if name in kw:
+					logging.warning('duplicate key:%s' % name)
+				kw[name] = val
+		if self._has_request_args:
+			kw['request'] = request
+		if self._required_kw_args:
+			for name in self._required_kw_args:
+				if not  name in kw:
+					return web.HTTPBadRequest('miss must param:%s' % name)
+		try:
+			ret = self._func(**kw)
+			return ret
+		except APIError as e:
+			return dict(error=e.error, data=e.data, message=e.message)
+			
+def add_static(app):
+	path = os.path.join(os.path.dirname(os.path.abspath(__file__)),'static')
+	app.router.add_static('/static/',path)
+
+def add_route(app):
 	
 	
 	

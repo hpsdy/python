@@ -1,9 +1,13 @@
 ' url handlers '
 
 def xxx():
-	pass
+	print(22222)
+
 
 class yyy():
-	pass
+	print(44444)
 
 zzz = 10
+
+#print(100000)
+yyy()
