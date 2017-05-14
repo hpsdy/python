@@ -31,7 +31,7 @@ try:
 				conns[cli_no] = cli
 				request[cli_no] = b''
 			elif event & select.EPOLLIN:
-				print('cli data input:%' % fileno)
+				print('cli data input:%s' % fileno)
 				try:
 					request[fileno] += conns[fileno].recv(100) 				
 					if not request[fileno]:
