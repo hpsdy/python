@@ -7,6 +7,7 @@ ser.setblocking(False)
 ser.bind(ip)
 ser.listen(10)
 print('server:%s' % ser,',no:',ser.fileno())
+print('in:%s,out:%s,hup:%s,et:%s' %(select.EPOLLIN,select.EPOLLOUT,select.EPOLLHUP,select.EPOLLET))
 epoll_loop = select.epoll() 
 epoll_loop.register(ser.fileno(),select.EPOLLIN)
 try:
@@ -14,7 +15,7 @@ try:
 	request = {}
 	response = {}
 	while True:
-		events = epoll_loop.poll(10)
+		events = epoll_loop.poll(100)
 		print('some event runing...')
 		for fileno,event in events:
 			print('句柄+事件,%s:%s' % (fileno,event))
