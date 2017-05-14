@@ -44,9 +44,9 @@ try:
 					print('cli %s close' % fileno)
 					epoll_loop.unregister(fileno)
 					conns[fileno].close()
-					request.remove(fileno)
-					if response[fileno]:
-						response.remove(fileno) 
+					request.pop(fileno)
+					if fileno in response:
+						response.pop(fileno) 
 			elif event & select.EPOLLOUT:
 				print('cli data output')
 				try:
@@ -60,17 +60,17 @@ try:
 					print('cli %s close' % fileno)
 					epoll_loop.unregister(fileno)
 					conns[fileno].close()
-					request.remove(fileno)
-					if response[fileno]:
-						response.remove(fileno) 
+					request.pop(fileno)
+					if fileno in response:
+						response.pop(fileno) 
 				except KeyError:
 					continue
 			elif event & select.EPOLLHUP:
 				epoll_loop.unregister(fileno)
 				conns[fileno].close()
-				request.remove(fileno)
-				if response[fileno]:
-					response.remove(fileno) 
+				request.pop(fileno)
+				if fileno in response:
+					response.pop(fileno) 
 finally:
 	print('closing all')
 	epoll_loop.unregister(ser.fileno())
