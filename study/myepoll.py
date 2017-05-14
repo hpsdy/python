@@ -14,7 +14,7 @@ try:
 	request = {}
 	response = {}
 	while True:
-		events = epoll_loop.poll(1)
+		events = epoll_loop.poll(10)
 		print('some event runing...')
 		for fileno,event in events:
 			print('句柄+事件,%s:%s' % (fileno,event))
@@ -35,8 +35,8 @@ try:
 				try:
 					request[fileno] += conns[fileno].recv(100) 
 					if not request[fileno]:
-						raise ConnectionRestError('没有数据')
-				except ConnectionRestError:
+						raise ConnectionResetError('没有数据')
+				except ConnectionResetError:
 					'''
 					客户端关闭
 					'''
@@ -51,7 +51,7 @@ try:
 					ret = conns[fileno].sendall(request[fileno])
 					if ret != None:
 						raise KeyError('服务端响应数据失败')
-				except ConnectionRestError:
+				except ConnectionResetError:
 					'''
 					客户端关闭
 					'''
