@@ -28,7 +28,7 @@ try:
 				cli_no = cli.fileno()
 				#epoll_loop.register(cli_no,select.EPOLLIN|select.EPOLLET)
 				epoll_loop.register(cli_no,select.EPOLLIN)
-				conns[fileno] = cli
+				conns[cli_no] = cli
 				request[cli_no] = b''
 			elif event & select.EPOLLIN:
 				print('cli data input')
