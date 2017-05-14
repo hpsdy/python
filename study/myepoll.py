@@ -22,16 +22,16 @@ try:
 				'''
 				客户端加入
 				'''
-				print('new cli add')
 				cli,addr = ser.accept()
 				cli.setblocking(False)
 				cli_no = cli.fileno()
+				print('new cli add:%s' % cli_no)
 				#epoll_loop.register(cli_no,select.EPOLLIN|select.EPOLLET)
 				epoll_loop.register(cli_no,select.EPOLLIN)
 				conns[cli_no] = cli
 				request[cli_no] = b''
 			elif event & select.EPOLLIN:
-				print('cli data input')
+				print('cli data input:%' % fileno)
 				try:
 					request[fileno] += conns[fileno].recv(100) 				
 					if not request[fileno]:
@@ -48,7 +48,7 @@ try:
 					if fileno in response:
 						response.pop(fileno) 
 			elif event & select.EPOLLOUT:
-				print('cli data output')
+				print('cli data output:%s' % fileno)
 				try:
 					ret = conns[fileno].sendall(request[fileno])
 					if ret != None:
@@ -68,6 +68,7 @@ try:
 				except KeyError:
 					continue
 			elif event & select.EPOLLHUP:
+				print('cli hup:%s' % fileno)
 				epoll_loop.unregister(fileno)
 				conns[fileno].close()
 				request.pop(fileno)
