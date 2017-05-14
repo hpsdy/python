@@ -33,7 +33,7 @@ try:
 			elif event & select.EPOLLIN:
 				print('cli data input:%s' % fileno)
 				try:
-					info = conns[fileno].recv(10)
+					info = conns[fileno].recv(900)
 					request[fileno] += info	
 					print('%s:%s,data:%s' %(fileno,info,request[fileno]))
 					if not request[fileno]:
