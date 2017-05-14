@@ -33,8 +33,9 @@ try:
 			elif event & select.EPOLLIN:
 				print('cli data input:%s' % fileno)
 				try:
-					request[fileno] += conns[fileno].recv(10) 	
-					print('%s:%s,data:%s' %(fileno,conns[fileno].recv(100),request[fileno]))
+					info = conns[fileno].recv(10)
+					request[fileno] += info	
+					print('%s:%s,data:%s' %(fileno,info,request[fileno]))
 					if not request[fileno]:
 						raise ConnectionResetError('没有数据')
 					epoll_loop.modify(fileno,select.EPOLLOUT)
@@ -50,8 +51,9 @@ try:
 						response.pop(fileno) 
 			elif event & select.EPOLLOUT:				
 				try:
-					ret = conns[fileno].sendall(request[fileno])
-					print('cli data output:%s,data:%s,ret:%s' % (fileno,request[fileno],ret))
+					data = request[fileno]
+					ret = conns[fileno].sendall(data)
+					print('cli data output:%s,data:%s,ret:%s' % (fileno,data,ret))
 					if ret != None:
 						raise KeyError('服务端响应数据失败')
 					else:
