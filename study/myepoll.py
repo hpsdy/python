@@ -30,7 +30,7 @@ try:
 				epoll_loop.register(cli_no,select.EPOLLIN)
 				conns[fileno] = cli
 				request[cli_no] = b''
-			elif event & EPOLLIN:
+			elif event & select.EPOLLIN:
 				print('cli data input')
 				try:
 					request[fileno] += conns[fileno].recv(100) 
@@ -45,7 +45,7 @@ try:
 					request.remove(fileno)
 					if response[fileno]:
 						response.remove(fileno) 
-			elif event & EPOLLOUT:
+			elif event & select.EPOLLOUT:
 				print('cli data output')
 				try:
 					ret = conns[fileno].sendall(request[fileno])
@@ -62,7 +62,7 @@ try:
 						response.remove(fileno) 
 				except KeyError:
 					continue
-			elif event & EPOLLHUP:
+			elif event & select.EPOLLHUP:
 				epoll_loop.unregister(fileno)
 				conns[fileno].close()
 				request.remove(fileno)
