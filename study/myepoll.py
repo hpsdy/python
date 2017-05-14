@@ -6,7 +6,7 @@ ser = socket.socket()
 ser.setblocking(False)
 ser.bind(ip)
 ser.listen(10)
-print('server:%s' % ser)
+print('server:%s' % ser,',no:',ser.fileno())
 epoll_loop = select.epoll() 
 epoll_loop.register(ser.fileno(),select.EPOLLIN)
 try:
