@@ -32,9 +32,10 @@ try:
 				conns[cli_no] = cli
 				request[cli_no] = b''
 			elif event & select.EPOLLIN:
+				print(event,'&',select.EPOLLIN,':',event & select.EPOLLIN)
 				print('cli data input:%s' % fileno)
 				try:
-					info = conns[fileno].recv(900)
+					info = conns[fileno].recv(5)
 					request[fileno] += info	
 					print('%s:%s,data:%s' %(fileno,info,request[fileno]))
 					if not request[fileno]:
