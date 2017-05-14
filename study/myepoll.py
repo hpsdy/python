@@ -40,6 +40,7 @@ try:
 					'''
 					客户端关闭
 					'''
+					print('cli %s close' % fileno)
 					epoll_loop.unregister(fileno)
 					conns[fileno].close()
 					request.remove(fileno)
@@ -55,6 +56,7 @@ try:
 					'''
 					客户端关闭
 					'''
+					print('cli %s close' % fileno)
 					epoll_loop.unregister(fileno)
 					conns[fileno].close()
 					request.remove(fileno)
