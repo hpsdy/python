@@ -34,7 +34,7 @@ try:
 				print('cli data input')
 				try:
 					request[fileno] += conns[fileno].recv(100) 
-					epoll_loop.register(fileno,select.EPOLLOUT)
+					epoll_loop.modify(fileno,select.EPOLLOUT)
 					if not request[fileno]:
 						raise ConnectionResetError('没有数据')
 				except ConnectionResetError:
