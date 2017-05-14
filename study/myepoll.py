@@ -6,6 +6,32 @@ ser = socket.socket()
 ser.setblocking(False)
 ser.bind(ip)
 ser.listen(10)
+'''
+EPOLLIN	Available for read
+EPOLLOUT	Available for write
+EPOLLPRI	Urgent data for read
+EPOLLERR	Error condition happened on the assoc. fd
+EPOLLHUP	Hang up happened on the assoc. fd
+EPOLLET	Set Edge Trigger behavior, the default is Level Trigger behavior
+EPOLLONESHOT	Set one-shot behavior. After one event is pulled out, the fd is internally disabled
+EPOLLRDNORM	Equivalent to EPOLLIN
+EPOLLRDBAND	Priority data band can be read.
+EPOLLWRNORM	Equivalent to EPOLLOUT
+EPOLLWRBAND	Priority data may be written.
+EPOLLMSG	Ignored.
+'''
+print(select.EPOLLIN)
+print(select.EPOLLOUT)
+print(select.EPOLLPRI)
+print(select.EPOLLERR)
+print(select.EPOLLHUP)
+print(select.EPOLLET)
+print(select.EPOLLONESHOT)
+print(select.EPOLLRDNORM)
+print(select.EPOLLRDBAND)
+print(select.EPOLLWRNORM)
+print(select.EPOLLWRBAND)
+print(select.EPOLLMSG)
 print('server:%s' % ser,',no:',ser.fileno())
 print('in:%s,out:%s,hup:%s,et:%s' %(select.EPOLLIN,select.EPOLLOUT,select.EPOLLHUP,select.EPOLLET))
 epoll_loop = select.epoll() 
