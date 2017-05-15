@@ -64,14 +64,14 @@ try:
 					info = conns[fileno].recv(5)
 					request[fileno] += info	
 					print('%s:%s,data:%s' %(fileno,info,request[fileno]))
-					if not request[fileno]:
+					if not info:
 						raise ConnectionResetError('没有数据')
 					epoll_loop.modify(fileno,select.EPOLLOUT)
-				except ConnectionResetError:
+				except ConnectionResetError as e:
 					'''
 					客户端关闭
 					'''
-					print('cli %s close' % fileno)
+					print('cli %s close/%s' % (fileno,e))
 					epoll_loop.unregister(fileno)
 					conns[fileno].close()
 					request.pop(fileno)
