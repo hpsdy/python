@@ -25,7 +25,7 @@ class daemon:
         if self.pid_file:
             with open(self.pid_file,'w') as fn:
                 fn.write(str(os.getpid()))
-            atexit.register(os.remove(),self.pid_file)
+            atexit.register(os.remove,self.pid_file)
         while(True):
             with open('./tmp/python.txt','aw') as fn:
                 fn.write(str(time.time()))
