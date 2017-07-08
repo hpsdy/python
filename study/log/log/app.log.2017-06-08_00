@@ -1,0 +1,186 @@
+[date:2017/06/08 00:10:59][logger:root.mylog][level:WARNING][filename:tieba_index.py][func:quert_by_url][line:18][msg:url:https://tieba.baidu.com/p/3138733512?see_lz=1&pn=1]
+[date:2017/06/08 00:10:59][logger:py.warnings][level:WARNING][filename:connectionpool.py][func:_validate_conn][line:852][msg:D:\python\lib\site-packages\requests\packages\urllib3\connectionpool.py:852: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning)
+]
+[date:2017/06/08 00:11:00][logger:root.mylog][level:WARNING][filename:tieba_index.py][func:quert_by_url][line:18][msg:url:https://tieba.baidu.com/p/3138733512?see_lz=1&pn=2]
+[date:2017/06/08 00:11:00][logger:py.warnings][level:WARNING][filename:connectionpool.py][func:_validate_conn][line:852][msg:D:\python\lib\site-packages\requests\packages\urllib3\connectionpool.py:852: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning)
+]
+[date:2017/06/08 00:11:01][logger:root.mylog][level:WARNING][filename:tieba_index.py][func:quert_by_url][line:18][msg:url:https://tieba.baidu.com/p/3138733512?see_lz=1&pn=3]
+[date:2017/06/08 00:11:01][logger:py.warnings][level:WARNING][filename:connectionpool.py][func:_validate_conn][line:852][msg:D:\python\lib\site-packages\requests\packages\urllib3\connectionpool.py:852: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning)
+]
+[date:2017/06/08 00:11:02][logger:root.mylog][level:WARNING][filename:tieba_index.py][func:data][line:48][msg:Traceback (most recent call last):
+  File "tieba_index.py", line 45, in data
+    data_str = self.page_data(ret,i)
+  File "tieba_index.py", line 62, in page_data
+    tmp_data += "¥�㣺"+lou_num+"\n"
+TypeError: Can't convert 'NoneType' object to str implicitly
+]
+[date:2017/06/08 00:14:12][logger:root.mylog][level:WARNING][filename:tieba_index.py][func:quert_by_url][line:18][msg:url:https://tieba.baidu.com/p/3138733512?see_lz=1&pn=3]
+[date:2017/06/08 00:14:12][logger:py.warnings][level:WARNING][filename:connectionpool.py][func:_validate_conn][line:852][msg:D:\python\lib\site-packages\requests\packages\urllib3\connectionpool.py:852: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning)
+]
+[date:2017/06/08 00:14:13][logger:root.mylog][level:WARNING][filename:tieba_index.py][func:data][line:48][msg:Traceback (most recent call last):
+  File "tieba_index.py", line 35, in data
+    data_str = self.page_data(ret,page)
+  File "tieba_index.py", line 62, in page_data
+    tmp_data += "¥�㣺"+lou_num+"\n"
+TypeError: Can't convert 'NoneType' object to str implicitly
+]
+[date:2017/06/08 00:14:53][logger:root.mylog][level:WARNING][filename:tieba_index.py][func:quert_by_url][line:18][msg:url:https://tieba.baidu.com/p/3138733512?see_lz=1&pn=3]
+[date:2017/06/08 00:14:53][logger:py.warnings][level:WARNING][filename:connectionpool.py][func:_validate_conn][line:852][msg:D:\python\lib\site-packages\requests\packages\urllib3\connectionpool.py:852: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning)
+]
+[date:2017/06/08 00:15:32][logger:root.mylog][level:WARNING][filename:tieba_index.py][func:quert_by_url][line:18][msg:url:https://tieba.baidu.com/p/3138733512?see_lz=1&pn=3]
+[date:2017/06/08 00:15:32][logger:py.warnings][level:WARNING][filename:connectionpool.py][func:_validate_conn][line:852][msg:D:\python\lib\site-packages\requests\packages\urllib3\connectionpool.py:852: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning)
+]
+[date:2017/06/08 00:16:04][logger:root.mylog][level:WARNING][filename:tieba_index.py][func:quert_by_url][line:18][msg:url:https://tieba.baidu.com/p/3138733512?see_lz=1&pn=3]
+[date:2017/06/08 00:16:04][logger:py.warnings][level:WARNING][filename:connectionpool.py][func:_validate_conn][line:852][msg:D:\python\lib\site-packages\requests\packages\urllib3\connectionpool.py:852: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning)
+]
+[date:2017/06/08 00:16:05][logger:root.mylog][level:WARNING][filename:tieba_index.py][func:data][line:48][msg:Traceback (most recent call last):
+  File "tieba_index.py", line 35, in data
+    data_str = self.page_data(ret,page)
+  File "tieba_index.py", line 63, in page_data
+    tmp_data += "¥�㣺"+lou_num+"\n"
+TypeError: Can't convert 'NoneType' object to str implicitly
+]
+[date:2017/06/08 00:18:10][logger:root.mylog][level:WARNING][filename:tieba_index.py][func:quert_by_url][line:18][msg:url:https://tieba.baidu.com/p/3138733512?see_lz=1&pn=3]
+[date:2017/06/08 00:18:10][logger:py.warnings][level:WARNING][filename:connectionpool.py][func:_validate_conn][line:852][msg:D:\python\lib\site-packages\requests\packages\urllib3\connectionpool.py:852: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning)
+]
+[date:2017/06/08 00:19:02][logger:root.mylog][level:WARNING][filename:tieba_index.py][func:quert_by_url][line:18][msg:url:https://tieba.baidu.com/p/3138733512?see_lz=1&pn=1]
+[date:2017/06/08 00:19:02][logger:py.warnings][level:WARNING][filename:connectionpool.py][func:_validate_conn][line:852][msg:D:\python\lib\site-packages\requests\packages\urllib3\connectionpool.py:852: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning)
+]
+[date:2017/06/08 00:19:03][logger:root.mylog][level:WARNING][filename:tieba_index.py][func:quert_by_url][line:18][msg:url:https://tieba.baidu.com/p/3138733512?see_lz=1&pn=2]
+[date:2017/06/08 00:19:03][logger:py.warnings][level:WARNING][filename:connectionpool.py][func:_validate_conn][line:852][msg:D:\python\lib\site-packages\requests\packages\urllib3\connectionpool.py:852: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning)
+]
+[date:2017/06/08 00:19:04][logger:root.mylog][level:WARNING][filename:tieba_index.py][func:quert_by_url][line:18][msg:url:https://tieba.baidu.com/p/3138733512?see_lz=1&pn=3]
+[date:2017/06/08 00:19:04][logger:py.warnings][level:WARNING][filename:connectionpool.py][func:_validate_conn][line:852][msg:D:\python\lib\site-packages\requests\packages\urllib3\connectionpool.py:852: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning)
+]
+[date:2017/06/08 00:19:05][logger:root.mylog][level:WARNING][filename:tieba_index.py][func:quert_by_url][line:18][msg:url:https://tieba.baidu.com/p/3138733512?see_lz=1&pn=4]
+[date:2017/06/08 00:19:05][logger:py.warnings][level:WARNING][filename:connectionpool.py][func:_validate_conn][line:852][msg:D:\python\lib\site-packages\requests\packages\urllib3\connectionpool.py:852: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning)
+]
+[date:2017/06/08 00:19:06][logger:root.mylog][level:WARNING][filename:tieba_index.py][func:quert_by_url][line:18][msg:url:https://tieba.baidu.com/p/3138733512?see_lz=1&pn=5]
+[date:2017/06/08 00:19:06][logger:py.warnings][level:WARNING][filename:connectionpool.py][func:_validate_conn][line:852][msg:D:\python\lib\site-packages\requests\packages\urllib3\connectionpool.py:852: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning)
+]
+[date:2017/06/08 00:22:40][logger:root.mylog][level:WARNING][filename:tieba_index.py][func:quert_by_url][line:18][msg:url:https://tieba.baidu.com/p/3138733512?see_lz=1&pn=1]
+[date:2017/06/08 00:22:40][logger:py.warnings][level:WARNING][filename:connectionpool.py][func:_validate_conn][line:852][msg:D:\python\lib\site-packages\requests\packages\urllib3\connectionpool.py:852: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning)
+]
+[date:2017/06/08 00:22:41][logger:root.mylog][level:WARNING][filename:tieba_index.py][func:quert_by_url][line:18][msg:url:https://tieba.baidu.com/p/3138733512?see_lz=1&pn=2]
+[date:2017/06/08 00:22:41][logger:py.warnings][level:WARNING][filename:connectionpool.py][func:_validate_conn][line:852][msg:D:\python\lib\site-packages\requests\packages\urllib3\connectionpool.py:852: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning)
+]
+[date:2017/06/08 00:22:42][logger:root.mylog][level:WARNING][filename:tieba_index.py][func:quert_by_url][line:18][msg:url:https://tieba.baidu.com/p/3138733512?see_lz=1&pn=3]
+[date:2017/06/08 00:22:42][logger:py.warnings][level:WARNING][filename:connectionpool.py][func:_validate_conn][line:852][msg:D:\python\lib\site-packages\requests\packages\urllib3\connectionpool.py:852: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning)
+]
+[date:2017/06/08 00:22:43][logger:root.mylog][level:WARNING][filename:tieba_index.py][func:data][line:48][msg:Traceback (most recent call last):
+  File "tieba_index.py", line 45, in data
+    data_str = self.page_data(ret,i)
+  File "tieba_index.py", line 57, in page_data
+    if not lou_num.find('¥'):
+AttributeError: 'NoneType' object has no attribute 'find'
+]
+[date:2017/06/08 00:29:36][logger:root.mylog][level:WARNING][filename:tieba_index.py][func:quert_by_url][line:18][msg:url:https://tieba.baidu.com/p/3138733512?see_lz=1&pn=1]
+[date:2017/06/08 00:29:36][logger:py.warnings][level:WARNING][filename:connectionpool.py][func:_validate_conn][line:852][msg:D:\python\lib\site-packages\requests\packages\urllib3\connectionpool.py:852: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning)
+]
+[date:2017/06/08 00:29:37][logger:root.mylog][level:WARNING][filename:tieba_index.py][func:quert_by_url][line:18][msg:url:https://tieba.baidu.com/p/3138733512?see_lz=1&pn=2]
+[date:2017/06/08 00:29:37][logger:py.warnings][level:WARNING][filename:connectionpool.py][func:_validate_conn][line:852][msg:D:\python\lib\site-packages\requests\packages\urllib3\connectionpool.py:852: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning)
+]
+[date:2017/06/08 00:29:38][logger:root.mylog][level:WARNING][filename:tieba_index.py][func:quert_by_url][line:18][msg:url:https://tieba.baidu.com/p/3138733512?see_lz=1&pn=3]
+[date:2017/06/08 00:29:38][logger:py.warnings][level:WARNING][filename:connectionpool.py][func:_validate_conn][line:852][msg:D:\python\lib\site-packages\requests\packages\urllib3\connectionpool.py:852: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning)
+]
+[date:2017/06/08 00:29:39][logger:root.mylog][level:WARNING][filename:tieba_index.py][func:data][line:48][msg:Traceback (most recent call last):
+  File "tieba_index.py", line 45, in data
+    data_str = self.page_data(ret,i)
+  File "tieba_index.py", line 57, in page_data
+    if not lou_num.endswith('¥'):
+AttributeError: 'NoneType' object has no attribute 'endswith'
+]
+[date:2017/06/08 00:32:13][logger:root.mylog][level:WARNING][filename:tieba_index.py][func:quert_by_url][line:18][msg:url:https://tieba.baidu.com/p/3138733512?see_lz=1&pn=1]
+[date:2017/06/08 00:32:13][logger:py.warnings][level:WARNING][filename:connectionpool.py][func:_validate_conn][line:852][msg:D:\python\lib\site-packages\requests\packages\urllib3\connectionpool.py:852: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning)
+]
+[date:2017/06/08 00:32:14][logger:root.mylog][level:WARNING][filename:tieba_index.py][func:data][line:48][msg:Traceback (most recent call last):
+  File "tieba_index.py", line 35, in data
+    data_str = self.page_data(ret,page)
+  File "tieba_index.py", line 68, in page_data
+    tmp_data += "¥�㣺"+lou_num+"\n"
+TypeError: Can't convert 'Tag' object to str implicitly
+]
+[date:2017/06/08 00:38:14][logger:root.mylog][level:WARNING][filename:tieba_index.py][func:quert_by_url][line:18][msg:url:https://tieba.baidu.com/p/3138733512?see_lz=1&pn=3]
+[date:2017/06/08 00:38:14][logger:py.warnings][level:WARNING][filename:connectionpool.py][func:_validate_conn][line:852][msg:D:\python\lib\site-packages\requests\packages\urllib3\connectionpool.py:852: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning)
+]
+[date:2017/06/08 00:38:15][logger:root.mylog][level:WARNING][filename:tieba_index.py][func:data][line:48][msg:Traceback (most recent call last):
+  File "tieba_index.py", line 35, in data
+    data_str = self.page_data(ret,page)
+  File "tieba_index.py", line 69, in page_data
+    tmp_data += "¥�㣺"+lou_num+"\n"
+TypeError: Can't convert 'Tag' object to str implicitly
+]
+[date:2017/06/08 00:39:24][logger:root.mylog][level:WARNING][filename:tieba_index.py][func:quert_by_url][line:18][msg:url:https://tieba.baidu.com/p/3138733512?see_lz=1&pn=3]
+[date:2017/06/08 00:39:24][logger:py.warnings][level:WARNING][filename:connectionpool.py][func:_validate_conn][line:852][msg:D:\python\lib\site-packages\requests\packages\urllib3\connectionpool.py:852: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning)
+]
+[date:2017/06/08 00:39:25][logger:root.mylog][level:WARNING][filename:tieba_index.py][func:data][line:48][msg:Traceback (most recent call last):
+  File "tieba_index.py", line 35, in data
+    data_str = self.page_data(ret,page)
+  File "tieba_index.py", line 69, in page_data
+    tmp_data += "¥�㣺"+lou_num+"\n"
+TypeError: Can't convert 'Tag' object to str implicitly
+]
+[date:2017/06/08 00:40:13][logger:root.mylog][level:WARNING][filename:tieba_index.py][func:quert_by_url][line:18][msg:url:https://tieba.baidu.com/p/3138733512?see_lz=1&pn=3]
+[date:2017/06/08 00:40:13][logger:py.warnings][level:WARNING][filename:connectionpool.py][func:_validate_conn][line:852][msg:D:\python\lib\site-packages\requests\packages\urllib3\connectionpool.py:852: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning)
+]
+[date:2017/06/08 00:40:14][logger:root.mylog][level:WARNING][filename:tieba_index.py][func:data][line:48][msg:Traceback (most recent call last):
+  File "tieba_index.py", line 35, in data
+    data_str = self.page_data(ret,page)
+  File "tieba_index.py", line 60, in page_data
+    if not lou_num and lou_num.endswith('¥'):
+AttributeError: 'NoneType' object has no attribute 'endswith'
+]
+[date:2017/06/08 00:40:51][logger:root.mylog][level:WARNING][filename:tieba_index.py][func:quert_by_url][line:18][msg:url:https://tieba.baidu.com/p/3138733512?see_lz=1&pn=3]
+[date:2017/06/08 00:40:51][logger:py.warnings][level:WARNING][filename:connectionpool.py][func:_validate_conn][line:852][msg:D:\python\lib\site-packages\requests\packages\urllib3\connectionpool.py:852: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning)
+]
+[date:2017/06/08 00:40:52][logger:root.mylog][level:WARNING][filename:tieba_index.py][func:data][line:48][msg:Traceback (most recent call last):
+  File "tieba_index.py", line 36, in data
+    self.write(data_str,self.size,page)
+  File "tieba_index.py", line 89, in write
+    fn.write(data.encode())
+AttributeError: 'NoneType' object has no attribute 'encode'
+]
+[date:2017/06/08 00:41:14][logger:root.mylog][level:WARNING][filename:tieba_index.py][func:quert_by_url][line:18][msg:url:https://tieba.baidu.com/p/3138733512?see_lz=1&pn=1]
+[date:2017/06/08 00:41:14][logger:py.warnings][level:WARNING][filename:connectionpool.py][func:_validate_conn][line:852][msg:D:\python\lib\site-packages\requests\packages\urllib3\connectionpool.py:852: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning)
+]
+[date:2017/06/08 00:41:15][logger:root.mylog][level:WARNING][filename:tieba_index.py][func:quert_by_url][line:18][msg:url:https://tieba.baidu.com/p/3138733512?see_lz=1&pn=2]
+[date:2017/06/08 00:41:15][logger:py.warnings][level:WARNING][filename:connectionpool.py][func:_validate_conn][line:852][msg:D:\python\lib\site-packages\requests\packages\urllib3\connectionpool.py:852: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning)
+]
+[date:2017/06/08 00:41:16][logger:root.mylog][level:WARNING][filename:tieba_index.py][func:quert_by_url][line:18][msg:url:https://tieba.baidu.com/p/3138733512?see_lz=1&pn=3]
+[date:2017/06/08 00:41:16][logger:py.warnings][level:WARNING][filename:connectionpool.py][func:_validate_conn][line:852][msg:D:\python\lib\site-packages\requests\packages\urllib3\connectionpool.py:852: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning)
+]
+[date:2017/06/08 00:41:17][logger:root.mylog][level:WARNING][filename:tieba_index.py][func:quert_by_url][line:18][msg:url:https://tieba.baidu.com/p/3138733512?see_lz=1&pn=4]
+[date:2017/06/08 00:41:18][logger:py.warnings][level:WARNING][filename:connectionpool.py][func:_validate_conn][line:852][msg:D:\python\lib\site-packages\requests\packages\urllib3\connectionpool.py:852: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning)
+]
+[date:2017/06/08 00:41:19][logger:root.mylog][level:WARNING][filename:tieba_index.py][func:quert_by_url][line:18][msg:url:https://tieba.baidu.com/p/3138733512?see_lz=1&pn=5]
+[date:2017/06/08 00:41:19][logger:py.warnings][level:WARNING][filename:connectionpool.py][func:_validate_conn][line:852][msg:D:\python\lib\site-packages\requests\packages\urllib3\connectionpool.py:852: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning)
+]

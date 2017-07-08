@@ -1,0 +1,23 @@
+INFO:root:≤‚ ‘
+2017/06/04 12:27:54 tieba.py <module> line:15 WARNING : warning
+2017/06/04 12:29:09 tieba.py <module> line:16 WARNING : warning
+2017/06/04 12:29:09 tieba.py log line:18 WARNING : fuunc warning
+2017/06/04 12:32:49 tieba.py <module> line:16 WARNING : warning
+2017/06/04 12:32:49 tieba.py log line:18 WARNING : fuunc warning
+root 2017/06/04 12:41:27 tieba.py <module> line:16 WARNING : warning
+root 2017/06/04 12:41:27 tieba.py log line:18 WARNING : fuunc warning
+[date:2017-06-04 13:00:36,979][logger:root][level:WARNING][filename:log.py][func:<module>][line:22][msg:warning]
+[date:2017-06-04 13:00:36,983][logger:root][level:WARNING][filename:log.py][func:<module>][line:24][msg:warning]
+[date:2017-06-04 13:00:36,986][logger:root][level:WARNING][filename:log.py][func:<module>][line:26][msg:warning]
+[date:2017-06-04 13:01:51,277][logger:root][level:WARNING][filename:log.py][func:<module>][line:22][msg:warning]
+[date:2017-06-04 13:01:51,280][logger:mylog][level:WARNING][filename:log.py][func:<module>][line:24][msg:warning]
+[date:2017-06-04 13:01:51,280][logger:mylog][level:WARNING][filename:log.py][func:<module>][line:24][msg:warning]
+[date:2017-06-04 13:01:51,281][logger:mylog.child][level:WARNING][filename:log.py][func:<module>][line:26][msg:warning]
+[date:2017-06-04 13:01:51,281][logger:mylog.child][level:WARNING][filename:log.py][func:<module>][line:26][msg:warning]
+[date:2017-06-04 13:01:51,281][logger:mylog.child][level:WARNING][filename:log.py][func:<module>][line:26][msg:warning]
+[date:2017-06-04 13:05:13,747][logger:root][level:WARNING][filename:log.py][func:<module>][line:23][msg:warning]
+[date:2017-06-04 13:05:13,747][logger:mylog][level:WARNING][filename:log.py][func:<module>][line:25][msg:warning]
+[date:2017-06-04 13:05:13,747][logger:mylog][level:WARNING][filename:log.py][func:<module>][line:25][msg:warning]
+[date:2017-06-04 13:05:13,747][logger:mylog.child][level:WARNING][filename:log.py][func:<module>][line:27][msg:warning]
+[date:2017-06-04 13:05:13,747][logger:mylog.child][level:WARNING][filename:log.py][func:<module>][line:27][msg:warning]
+[date:2017-06-04 13:05:13,747][logger:mylog.child][level:WARNING][filename:log.py][func:<module>][line:27][msg:warning]
