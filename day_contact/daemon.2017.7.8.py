@@ -34,6 +34,8 @@ class daemon:
                 time.sleep(limit)
         except Exception as e:
             pass
+        finally:
+            pass
 if __name__=='__main__':
     mydaemon = daemon(pid_file='./tmp/python.pid')
     mydaemon._daemon()
