@@ -18,6 +18,8 @@ class daemon:
             if pid:
                 sys.exit(0)
             print(os.getpid())
+            print(os.getpid())
+            print(os.getpid())
             sys.stderr.flush()
             sys.stdout.flush()
             with open('/dev/null') as read_null,open('/dev/null','w') as write_null:
@@ -35,7 +37,10 @@ class daemon:
         except Exception as e:
             pass
         finally:
-            pass
+            if os.path.isfile(self.pid_file):
+                with open('./tmp/python_file.txt','a+') as fn:
+                    fn.write(str(time.time())+"\n")
+                print('finally')
 if __name__=='__main__':
     mydaemon = daemon(pid_file='./tmp/python.pid')
     mydaemon._daemon()
