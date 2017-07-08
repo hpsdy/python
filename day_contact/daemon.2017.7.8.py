@@ -31,4 +31,5 @@ class daemon:
                 fn.write(str(time.time()))
             time.sleep(limit)
 if __name__=='__main__':
-    daemon(pid_file='./tmp/python.pid')
+    mydaemon = daemon(pid_file='./tmp/python.pid')
+    mydaemon._daemon()
