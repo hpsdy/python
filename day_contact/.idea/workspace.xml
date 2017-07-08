@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/daemon.2017.7.8.py" line="21" />
+    <bookmark url="file://$PROJECT_DIR$/daemon.2017.7.8.py" line="22" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6b4b4ea2-e02e-40de-a7fb-d74ce3d999e5" name="Default" comment="">
@@ -21,8 +21,8 @@
       <file leaf-file-name="daemon.2017.7.8.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/daemon.2017.7.8.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="26" column="47" lean-forward="true" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
+            <state relative-caret-position="308">
+              <caret line="14" column="24" lean-forward="false" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -202,7 +202,14 @@
       <option name="project" value="LOCAL" />
       <updated>1499489763511</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add">
+      <created>1499490038704</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1499490038704</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -253,8 +260,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/daemon.2017.7.8.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="26" column="47" lean-forward="true" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
+        <state relative-caret-position="308">
+          <caret line="14" column="24" lean-forward="false" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
           <folding />
         </state>
       </provider>
