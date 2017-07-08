@@ -29,7 +29,7 @@ class daemon:
             atexit.register(os.remove,self.pid_file)
         while(True):
             with open('./tmp/python.txt','a+') as fn:
-                fn.write(str(time.time()))
+                fn.write(str(time.time())+"\n")
             time.sleep(limit)
 if __name__=='__main__':
     mydaemon = daemon(pid_file='./tmp/python.pid')
