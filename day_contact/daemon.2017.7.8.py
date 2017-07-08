@@ -28,7 +28,7 @@ class daemon:
         #         fn.write(str(os.getpid()))
         #     atexit.register(os.remove,self.pid_file)
         while(True):
-            with open('./tmp/python.txt','aw') as fn:
+            with open('./tmp/python.txt','a+') as fn:
                 fn.write(str(time.time()))
             time.sleep(limit)
 if __name__=='__main__':
