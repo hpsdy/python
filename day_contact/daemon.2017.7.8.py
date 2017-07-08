@@ -32,6 +32,8 @@ class daemon:
                 with open('./tmp/python.txt','a+') as fn:
                     fn.write(str(time.time())+"\n")
                 time.sleep(limit)
+        except Exception as e:
+            pass
         finally:
             os.remove(self.pid_file)
 if __name__=='__main__':
