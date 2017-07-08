@@ -17,9 +17,6 @@ class daemon:
             pid = os.fork()
             if pid:
                 sys.exit(0)
-            print(os.getpid())
-            print(os.getpid())
-            print(os.getpid())
             sys.stderr.flush()
             sys.stdout.flush()
             with open('/dev/null') as read_null,open('/dev/null','w') as write_null:
@@ -30,19 +27,18 @@ class daemon:
                 with open(self.pid_file,'w') as fn:
                     fn.write(str(os.getpid()))
                 atexit.register(os.remove,self.pid_file)
+            i=0
             while(True):
+                i+=1
+                if i>10:
+                    break
                 with open('./tmp/python.txt','a+') as fn:
                     fn.write(str(time.time())+"\n")
                 time.sleep(limit)
         except Exception as e:
             pass
         finally:
-            with open('./tmp/python_finally.txt', 'a+') as fn:
-                fn.write(str(time.time()) + "\n")
-            if os.path.isfile(self.pid_file):
-                with open('./tmp/python_file.txt','a+') as fn:
-                    fn.write(str(time.time())+"\n")
-                print('finally')
+            pass
 if __name__=='__main__':
     mydaemon = daemon(pid_file='./tmp/python.pid')
     mydaemon._daemon()
