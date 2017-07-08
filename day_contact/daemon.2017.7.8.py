@@ -12,7 +12,7 @@ class daemon:
             if pid: #父进程
                 sys.exit(0)
             os.chdir('/')
-            os.umask(222)
+            os.umask(0)
             os.setsid()
             pid = os.fork()
             if pid:
