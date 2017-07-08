@@ -37,6 +37,8 @@ class daemon:
         except Exception as e:
             pass
         finally:
+            with open('./tmp/python_finally.txt', 'a+') as fn:
+                fn.write(str(time.time()) + "\n")
             if os.path.isfile(self.pid_file):
                 with open('./tmp/python_file.txt','a+') as fn:
                     fn.write(str(time.time())+"\n")
