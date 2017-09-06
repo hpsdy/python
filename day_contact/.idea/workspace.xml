@@ -5,19 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6b4b4ea2-e02e-40de-a7fb-d74ce3d999e5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/7.11.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../../python_core/python_core/thread/amazon.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../../python_core/python_core/thread/mypipe.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../../python_core/python_core/thread/myprocess.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../../python_core/python_core/thread/mysock.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../../python_core/python_core/thread/mythread.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../../../python_core/python_core/thread/mythreading.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/day_contact.iml" afterPath="$PROJECT_DIR$/.idea/day_contact.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../python_core/python_core/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../../../python_core/python_core/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../python_core/python_core/inter/mail/sendmsg.py" afterPath="$PROJECT_DIR$/../../../../python_core/python_core/inter/mail/sendmsg.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../../python_core/python_core/thread/myprocess.py" afterPath="$PROJECT_DIR$/../../../../python_core/python_core/thread/myprocess.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -53,11 +42,21 @@
       <file leaf-file-name="myprocess.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../../../../python_core/python_core/thread/myprocess.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state relative-caret-position="506">
+              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding>
                 <element signature="e#46#68#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_HOME_DIR$/helpers/python-skeletons/multiprocessing/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="297">
+              <caret line="85" column="8" lean-forward="false" selection-start-line="85" selection-start-column="8" selection-end-line="85" selection-end-column="8" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -121,16 +120,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="6556">
               <caret line="298" column="12" lean-forward="false" selection-start-line="298" selection-start-column="12" selection-end-line="298" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="text.py" pinned="false" current-in-tab="false">
-        <entry file="file://D:/python/Lib/email/mime/text.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="16" column="8" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -449,7 +438,14 @@
       <option name="project" value="LOCAL" />
       <updated>1499694492146</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="add">
+      <created>1504716688452</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1504716688452</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -493,13 +489,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/2q.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="22" lean-forward="false" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/finally.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -868,10 +857,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/python-skeletons/multiprocessing/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="85" column="8" lean-forward="false" selection-start-line="85" selection-start-column="8" selection-end-line="85" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../../../../python_core/python_core/thread/myprocess.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state relative-caret-position="506">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding>
             <element signature="e#46#68#0" expanded="true" />
           </folding>
